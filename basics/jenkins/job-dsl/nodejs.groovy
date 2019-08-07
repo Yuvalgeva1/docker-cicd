@@ -35,7 +35,7 @@ job('NodeJS Docker example') {
             repositoryName('yuvalgeva/testnode') //qa / dev
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
-            buildContext('/basics')
+            buildContext('./basics')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
