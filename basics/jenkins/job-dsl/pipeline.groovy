@@ -9,7 +9,7 @@ pipelineJob('boilerplate-pipeline') {
                 git {
                     remote {url('https://github.com/yuvalgeva1/docker-cicd')}
                     branches('master')
-                    scriptPath('misc/JenkinsFile')
+                    scriptPath('./basics/misc/JenkinsFile')
                     extentions{}
                     // git('git repo: https://github.com/yuvalgeva1/docker-cicd')
                     // script(readFileFromWorkspace('./basics/misc/Jenkinsfile'))
